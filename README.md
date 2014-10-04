@@ -14,7 +14,7 @@ Tampan is jekyll theme which has pretty configurable and also has [Bootstrap int
 
 ## Usage
 Be sure you have [Jekyll](http://jekyllrb.com/docs/installation/). then download this repository.
-**Note : ** if you want to keeping tampan up to date, just clone this repository.
+**Note :** if you want to keeping tampan up to date, just clone this repository.
 
 ## Customize
 1. *Be Sure* you should change `_config.yml` and `_data/tampan.yml` fill your own information
