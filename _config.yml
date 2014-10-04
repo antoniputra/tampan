@@ -6,8 +6,8 @@ twitter: antoni_putra12
 github:  antoniputra
 
 # Url
-url: "http://antoniputra.github.io/tampan"
-baseurl: ""
+url: "http://antoniputra.github.io"
+baseurl: "/tampan/"
 tagurl: "/tags/"
 
 # Build settings
