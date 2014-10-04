@@ -1,0 +1,52 @@
+<header class="header">
+
+    <div class="logo">
+        <span class="logo-cover" style="background-image: url({{ site.data.tampan.theme.cover }})">
+            <span class="logo-cover-layer"></span>
+        </span>
+
+        <div class="logo-link">
+            <a href="{{ site.url }}" class="logo-img">
+                <img src="{{ site.data.tampan.profile_picture }}">
+            </a>
+            <h1 class="logo-title">{{ site.data.tampan.profile_name }}</h1>
+            <p class="logo-description">{{ site.data.tampan.profile_profession }}</p>            
+        </div>
+        
+        <p class="logo-social">
+            <a href="https://twitter.com/{{ site.twitter }}" class="btn btn-primary">
+                <i class="fa fa-twitter"></i> Twiter
+            </a>
+            <a href="https://github.com/{{ site.github }}" class="btn btn-primary">
+                <i class="fa fa-github"></i> Github
+            </a>
+        </p>
+    </div>
+
+    <nav class="navbar navbar-default navbar-tampan" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="fa fa-bars"></span>
+                </button>
+                <a class="navbar-brand" href="/">Home</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    {% assign webPages = site.pages | where:"layout","page" %}
+                    {% for page in webPages %}
+                    {% if page.title %}
+                        <li>
+                            <a href="{{ page.url | prepend: site.baseurl }}">
+                                {{ page.title }}
+                            </a>
+                        </li>
+                    {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>

@@ -1,0 +1,25 @@
+# Blog Information
+profile_name: "Antoni Putra"
+profile_profession: "Full Stack Web Developer"
+profile_picture: "https://avatars1.githubusercontent.com/u/3622084?v=2&s=150"
+
+meta_keywords: "Antoni Putra, Web Developer, PHP, Laravel Framework."
+meta_description: "Currently I am Full Stack Web Developer from Indonesian, I spend my time to level up my PHP, HTML, CSS, and Javascript (with jquery) skills. I am also create open-source project in github."
+
+
+# Blog Theme
+theme:
+  # Color scheme based on http://flatuicolors.com.
+  # Options : grey, dark, turquoise, green, blue, purple, orange, red
+  color: dark
+
+  # Make navbar to center ?
+  # Options : true, false
+  navbar_center: true
+
+  # How with sidebar ?
+  # Options : left, right, none
+  sidebar_position: right
+
+  # Cover image url
+  cover: "/assets/images/cover.jpg"

@@ -1,0 +1,20 @@
+<footer class="footer">
+    <p class="rss-subscribe">
+        <a href="{{ "/feed.xml" | prepend: site.baseurl }}">Subscribe via RSS</a>
+    </p>
+    <p>
+    	&copy; Copyright 2014 | All Right Reserved by <a href="https://twitter.com/antoni_putra12" target="_blank">Antoni Putra</a>.
+    </p>
+    <p>
+    	Built with <a href="http://jekyllrb.com/">Jekyll</a> and <a href="http://github.com/antoniputra/tampan">Tampan Theme</a>.
+    </p>
+</footer>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="{{ "/assets/scripts/masonry.min.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript">
+	$('.box-grid').masonry({
+		itemSelector : '.box-grid-item'
+	});
+</script>

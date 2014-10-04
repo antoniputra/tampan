@@ -1,0 +1,70 @@
+---
+---
+@charset "utf-8";
+
+@function ngeblur($color, $opacity: 0.3) {
+    @return rgba($color, $opacity);
+}
+
+
+/*--------------
+* Tampan Themes
+----------------*/
+
+$tampan-is-navbar-center: {{site.data.tampan.theme.navbar_center}};
+
+// Typography
+$tampan-font-family-base:	Ubuntu, Arial;
+$tampan-font-size-base:   	16px;
+$tampan-font-size-large:   	19px;
+$tampan-font-size-small:  	$tampan-font-size-base * 0.900;
+$tampan-line-height: 		1.5;
+// End Typography
+
+
+/* Theme Color Setting */
+$turquoise:		#1abc9c;
+$green:	 		#2ecc71;
+$blue:	 		#3498db;
+$purple: 		#9b59b6;
+$dark:	 		#34495e;
+$grey:	 		#95a5a6;
+$orange: 		#e67e22;
+$red:	 		#e74c3c;
+
+// the variable
+$tampan: 				${{ site.data.tampan.theme.color }};
+$tampan-young:			lighten($tampan, 9);
+$tampan-youngest:		lighten($tampan, 14);
+$tampan-old:			darken($tampan, 9);
+$tampan-oldest:			darken($tampan, 14);
+$tampan-body-bg:		ngeblur($tampan-youngest, 0.10);
+$tampan-box-bg:			ngeblur($tampan-youngest, 0.07);
+// $tampan-box-bg:			lighten($tampan-youngest, 31);
+$tampan-footer-border:	$tampan-youngest;
+$tampan-cover-color:	#3f3f3f;
+
+{% unless site.data.tampan.theme.cover == "" %}
+	$tampan-cover-color:	lighten($tampan-youngest, 21);
+{% endunless %}
+
+// Forcing Override Bootstrap
+$navbar-height: 					60px;
+$navbar-default-bg:					$tampan;
+$navbar-default-border:				$tampan-oldest;
+$navbar-default-color:				#fafafa;
+$navbar-default-brand-hover-bg:		darken($tampan-oldest, 5);
+$navbar-default-link-color:			#fafafa;
+$navbar-default-link-hover-color:	#fafafa;
+$navbar-default-link-hover-bg:		$tampan-oldest;
+$navbar-border-radius:				0px;
+
+$thumbnail-border: 			$tampan;
+$hr-border:					$tampan-youngest;
+// End Forcing Override Bootstrap
+
+
+@import "bootstrap-custom",
+		"bootstrap-sass/bootstrap",
+		"tampan/syntax",
+		"tampan/base";

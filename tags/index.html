@@ -1,0 +1,30 @@
+---
+layout: page
+title: Tags
+description: "All tags"
+---
+
+{% capture tags %}
+    {% for tag in site.tags %}
+        {{ tag[0] }}
+    {% endfor %}
+{% endcapture %}
+
+{% assign allTags = tags | split:' ' | sort %}
+
+{% for tag in allTags %}
+    <h3> {{ tag }} </h3>
+    <ul class="nav">
+        {% for post in site.posts %}
+            {% for otag in post.tags %}
+                {% if tag == otag %}
+                    <li>
+                        <a href="{{ post.url }}" class="red-link">
+                            {{ post.title }}
+                        </a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+    </ul>
+{% endfor %}

@@ -1,0 +1,18 @@
+# Site settings
+title: Tampan Theme - Antoni Putra
+email: akiddcode@gmail.com
+description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+twitter: antoni_putra12
+github:  antoniputra
+
+# Url
+url: "http://antoniputra.github.io"
+baseurl: ""
+tagurl: "/tags/"
+
+# Build settings
+permalink: /:title
+markdown: kramdown
+highlighter: pygments
+port: "1994"
+paginate: 5

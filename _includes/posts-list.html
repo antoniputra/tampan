@@ -1,0 +1,20 @@
+<div class="box">
+    <h2 class="box-head">
+        <a href="{{ post.url | slugify }}">
+            {{ post.title }}
+        </a>
+    </h2>
+    <div class="box-meta">
+        <a href="{{ post.tags | first | slugify | prepend: site.tagurl }}" class="label label-primary">
+            <i class="fa fa-tag"></i>
+            {{ post.tags }}
+        </a>
+        <span class="label label-default">
+            <i class="fa fa-calendar"></i>
+            {{ post.date | date_to_long_string }}
+        </span>
+    </div>
+    <div class="box-body">
+        {{ post.excerpt }}
+    </div>
+</div>

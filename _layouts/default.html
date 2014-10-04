@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{{ site.description }}">
+
+    <!-- <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}"> -->
+
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ "/assets/resources/font-awesome/css/font-awesome.min.css" | prepend: site.baseurl }}">
+    
+    <link rel="stylesheet" href="{{ "/assets/styles/tampan.css" | prepend: site.baseurl }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    
+    {% include head.html %}
+</head>
+<body>
+
+    {% include header.html %}
+
+    <div class="container">
+        <div class="row">
+
+            {% if site.data.tampan.theme.sidebar_position == "left" %}
+                <div class="col-md-3">
+                    <div class="sidebar">
+                        {% include sidebar.html %}
+                    </div>
+                </div>
+            {% endif %}
+
+            <div class="col-md-9">
+                <div class="content">
+                    {{ content }}
+                </div>
+            </div>
+            
+            {% if site.data.tampan.theme.sidebar_position == "right" %}
+                <div class="col-md-3">
+                    <div class="sidebar">
+                        {% include sidebar.html %}
+                    </div>
+                </div>
+            {% endif %}
+
+        </div>
+    </div>
+
+    {% include footer.html %}
+
+</body>
+</html>

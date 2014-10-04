@@ -1,0 +1,20 @@
+<div class="box-grid">
+    {% for post in paginator.posts %}
+        <div class="box box-grid-item">
+            <h2 class="box-head">
+                <a href="{{ post.url | prepend: site.baseurl }}">
+                    {{ post.title }}
+                </a>
+            </h2>
+            <div class="box-body">
+                <h4>
+                    <span class="label label-default">
+                        <i class="fa fa-tag"></i>
+                        {{ post.categories }}
+                    </span>
+                </h4>
+                {{ post.excerpt }}
+            </div>
+        </div>
+    {% endfor %}
+</div>

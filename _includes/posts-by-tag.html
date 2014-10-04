@@ -1,0 +1,9 @@
+{% for post in site.posts %}
+	{% for post_tag in post.tags %}
+		{% if post_tag == include.tag %}
+			
+			{% include posts-list.html %}
+
+		{% endif %}
+	{% endfor %}
+{% endfor %}

@@ -1,0 +1,15 @@
+<div class="sidebar-item">
+    <h4>
+        <i class="fa fa-tag"></i>
+        Tag
+    </h4>
+    <ul class="nav side">
+        {% for tag in site.tags %}
+            <li>
+                <a href="{{ tag | first | slugify | prepend: site.tagurl }}">
+                    {{ tag | first }} &nbsp; <span class="badge">{{ tag | last | size }}</span>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
