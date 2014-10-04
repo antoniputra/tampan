@@ -11,7 +11,7 @@ meta_description: "Currently I am Full Stack Web Developer from Indonesian, I sp
 theme:
   # Color scheme based on http://flatuicolors.com.
   # Options : grey, dark, turquoise, green, blue, purple, orange, red
-  color: dark
+  color: blue
 
   # Make navbar to center ?
   # Options : true, false
