@@ -10,9 +10,9 @@ body { background-color: $tampan-body-bg; font-family: "Ubuntu", Arial; }
 .logo { display: block; position:relative; padding: 40px 0px; text-align: center; }
 
 .logo:hover {
-	> .logo-cover > .logo-cover-layer { transition: all .35s ease-in-out; background: ngeblur(#000, 0.5); }
-	.logo-link > .logo-img > img { transition: all .35s ease-in-out; border: 1.5px solid #fff; }
-	.logo-link, .logo-social > a { transition: all .35s ease-in-out; color: #fafafa; text-decoration: none; }
+	> .logo-cover > .logo-cover-layer { transition: all .30s ease-in-out; background: ngeblur(#000, 0.5); }
+	.logo-link > .logo-img > img { transition: all .30s ease-in-out; border: 1.5px solid #fff; }
+	.logo-link, .logo-social > a { transition: all .30s ease-in-out; color: #fafafa; text-decoration: none; }
 }
 .logo > .logo-cover { display: block; content: ""; background-position: center center; background-color: lighten($tampan-youngest, 28); opacity: 0.7; top: 0; left: 0; bottom: 0; right: 0; position: absolute; z-index: -10; }
 .logo > .logo-cover > .logo-cover-layer { background-color: ngeblur(#000, 0.1); position: absolute; top: 0; left: 0; bottom: 0; right: 0; z-index: -9; }
@@ -25,7 +25,7 @@ body { background-color: $tampan-body-bg; font-family: "Ubuntu", Arial; }
 
 .logo > .logo-social > a { color: $tampan-cover-color; }
 
-.logo-link, .logo-img, .logo-img > img, .logo-social, .logo-cover, .logo-cover-layer { transition: all .35s ease-in-out; }
+.logo-link, .logo-img, .logo-img > img, .logo-social, .logo-cover, .logo-cover-layer { transition: all .30s ease-in-out; }
 
 @if $tampan-is-navbar-center == true {
 	.navbar-tampan .navbar-collapse { text-align: center; }
@@ -63,5 +63,11 @@ body { background-color: $tampan-body-bg; font-family: "Ubuntu", Arial; }
 /* FOOTER */
 .footer { border-top:1px dashed $tampan-footer-border; margin-top: 60px; padding: 20px 0px; text-align: center; }
 /* END FOOTER */
+
+
+/* OTHER */
+.btn-tampan { background-color: $tampan; border-color: $tampan-oldest; color: #f0f0f0; }
+.btn-tampan:hover { background-color: $tampan-oldest; color: #fff; }
+/* END OTHER */
 
 #pushstat { display: none; }
