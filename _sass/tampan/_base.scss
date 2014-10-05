@@ -63,3 +63,5 @@ body { background-color: $tampan-body-bg; font-family: "Ubuntu", Arial; }
 /* FOOTER */
 .footer { border-top:1px dashed $tampan-footer-border; margin-top: 60px; padding: 20px 0px; text-align: center; }
 /* END FOOTER */
+
+#pushstat { display: none; }
