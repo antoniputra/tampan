@@ -1,7 +1,7 @@
 Tampan
 ======
 
-Tampan is jekyll theme which has pretty configurable and also has [Bootstrap integration](http://getbootstrap.com). See some [Screenshot](https://github.com/antoniputra/tampan#screenshot)
+Tampan is jekyll theme which has pretty configurable and also has [Bootstrap integration](http://getbootstrap.com). See some [Screenshot](#screenshot)
 
 
 ## Feature
