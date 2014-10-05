@@ -19,7 +19,7 @@ description: "All tags"
             {% for otag in post.tags %}
                 {% if tag == otag %}
                     <li>
-                        <a href="{{ post.url }}" class="red-link">
+                        <a href="{{ post.url | prepend: site.baseurl }}" class="red-link">
                             {{ post.title }}
                         </a>
                     </li>

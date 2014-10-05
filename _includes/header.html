@@ -10,7 +10,7 @@
                 <img src="{{ site.data.tampan.profile_picture }}">
             </a>
             <h1 class="logo-title">{{ site.data.tampan.profile_name }}</h1>
-            <p class="logo-description">{{ site.data.tampan.profile_profession }}</p>            
+            <p class="logo-description">{{ site.data.tampan.profile_description }}</p>            
         </div>
         
         <p class="logo-social">
@@ -30,7 +30,7 @@
                     <span class="sr-only">Toggle navigation</span>
                     <span class="fa fa-bars"></span>
                 </button>
-                <a class="navbar-brand" href="/">Home</a>
+                <a class="navbar-brand" href="{{ "/" | prepend: site.baseurl }}">Home</a>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

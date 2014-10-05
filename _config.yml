@@ -7,7 +7,7 @@ github:  antoniputra
 
 # Url
 url: "http://antoniputra.github.io"
-baseurl: "/tampan/"
+baseurl: "/tampan"
 tagurl: "/tags/"
 
 # Build settings

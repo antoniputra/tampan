@@ -1,6 +1,6 @@
 # Blog Information
 profile_name: "Antoni Putra"
-profile_profession: "Full Stack Web Developer"
+profile_description: "Full Stack Web Developer"
 profile_picture: "https://avatars1.githubusercontent.com/u/3622084?v=2&s=150"
 
 meta_keywords: "Antoni Putra, Web Developer, PHP, Laravel Framework."
@@ -22,4 +22,4 @@ theme:
   sidebar_position: right
 
   # Cover image url
-  cover: "/assets/images/cover.jpg"
+  cover: "/tampan/assets/images/cover.jpg"

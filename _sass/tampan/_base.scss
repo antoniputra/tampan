@@ -2,7 +2,7 @@ h1, h2, h3, h4, h5, h6 {
 	> a { color: inherit; }
 }
 
-body { background-color: $tampan-body-bg; }
+body { background-color: $tampan-body-bg; font-family: "Ubuntu", Arial; }
 
 /* HEADER */
 .header { border-top: 3px solid $tampan; position: relative; }
@@ -10,20 +10,22 @@ body { background-color: $tampan-body-bg; }
 .logo { display: block; position:relative; padding: 40px 0px; text-align: center; }
 
 .logo:hover {
-	> .logo-cover > .logo-cover-layer { transition: background .35s ease-in-out; background: ngeblur(#000, 0.5); }
-	.logo-link > .logo-img > img { transition: border .35s ease-in-out; border: 1.5px solid #fff; }
-	.logo-link, .logo-social > a { transition: color .35s ease-in-out; color: #fafafa; text-decoration: none; }
+	> .logo-cover > .logo-cover-layer { transition: all .35s ease-in-out; background: ngeblur(#000, 0.5); }
+	.logo-link > .logo-img > img { transition: all .35s ease-in-out; border: 1.5px solid #fff; }
+	.logo-link, .logo-social > a { transition: all .35s ease-in-out; color: #fafafa; text-decoration: none; }
 }
 .logo > .logo-cover { display: block; content: ""; background-position: center center; background-color: lighten($tampan-youngest, 28); opacity: 0.7; top: 0; left: 0; bottom: 0; right: 0; position: absolute; z-index: -10; }
-.logo > .logo-cover > .logo-cover-layer { background-color: ngeblur(#000, 0.1); position: absolute; top: 0; left: 0; bottom: 0; right: 0; z-index: -9; transition: background-color .25s ease-in-out; }
+.logo > .logo-cover > .logo-cover-layer { background-color: ngeblur(#000, 0.1); position: absolute; top: 0; left: 0; bottom: 0; right: 0; z-index: -9; }
 
-.logo > .logo-link { color: $tampan-cover-color; display: inline-block; }
+.logo > .logo-link { color: #333; text-shadow: 0px 0px 1px $tampan; display: inline-block; }
 .logo > .logo-link > .logo-img { display: block; margin-bottom: 20px; }
 .logo > .logo-link > .logo-img > img { border-radius: 50%; border: 1px solid $tampan-oldest; padding: 4px; max-width: 240px; max-height: 240px; }
 .logo > .logo-link > .logo-title { margin:5px 0px; font-size: 32px; }
 .logo > .logo-link > .logo-description { font-style: italic; }
 
 .logo > .logo-social > a { color: $tampan-cover-color; }
+
+.logo-link, .logo-img, .logo-img > img, .logo-social, .logo-cover, .logo-cover-layer { transition: all .35s ease-in-out; }
 
 @if $tampan-is-navbar-center == true {
 	.navbar-tampan .navbar-collapse { text-align: center; }
@@ -45,14 +47,16 @@ body { background-color: $tampan-body-bg; }
 
 /* CONTENT */
 .content { min-height: 500px; }
+.content > .content-title { margin: 0px 0px 20px 0px; }
 
-.box { padding: 45px 55px; background-color: $tampan-box-bg; border-radius: 15px; box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.20), inset 0px -15px 40px -25px #000; margin-bottom: 20px; }
+.box { margin-bottom: 20px; padding: 45px 55px; position: relative; background-color: $tampan-box-bg; border-radius: 15px; box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.20), inset 0px -15px 40px -25px #000; }
 .box-grid-item { width: 45%; margin: 10px; }
 .box .box-head { margin:0px; padding:10px 0px; font-size:28px; }
 .box .box-head > a[href] {  }
-.box .box-meta { font-size: 18px; }
-.box .box-meta > .label { margin-right: 10px; }
-.box .box-body { margin-top:20px; padding: 20px 0px; border-top: 1px dashed $tampan-youngest; }
+.box .box-head > .box-head-meta { margin-top: 10px; display: block; font-size: 60%; }
+.box .box-head .box-meta-item { margin-right: 10px; }
+.box .box-body { margin-top:10px; padding: 20px 0px; border-top: 1px dashed $tampan-youngest; }
+.box .box-body > .box-body-meta { position: absolute; bottom: 30px; right: 50px; }
 /* END CONTENT */
 
 

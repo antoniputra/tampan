@@ -6,7 +6,8 @@
     <ul class="nav side">
         {% for tag in site.tags %}
             <li>
-                <a href="{{ tag | first | slugify | prepend: site.tagurl }}">
+                {% assign tagUrl = tag | first | slugify | prepend: site.tagurl | prepend: site.baseurl %}
+                <a href="{{ tagUrl }}">
                     {{ tag | first }} &nbsp; <span class="badge">{{ tag | last | size }}</span>
                 </a>
             </li>

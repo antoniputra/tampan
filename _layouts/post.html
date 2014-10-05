@@ -3,17 +3,13 @@ layout: default
 ---
 
 <div class="box">
-	<h1 class="box-head">{{ page.title }}</h1>
-	<div class="box-meta">
-        <a href="{{ page.tags | slugize | prepend: site.baseurl }}" class="label label-default">
-            <i class="fa fa-tag"></i>
-            {{ page.tags }}
-        </a>
-        <span class="label label-default">
-            <i class="fa fa-calendar"></i>
-            {{ page.date | date_to_long_string }}
-        </span>
-    </div>
+	<h1 class="box-head">
+        {{ page.title }}
+        <small class="box-head-meta">
+            <a href="{{ page.tags | first | slugify | prepend: site.tagurl }}" class="box-meta-item"><i class="fa fa-tag"></i> {{ page.tags }}</a>
+            <span class="box-meta-item"><i class="fa fa-calendar"></i> {{ page.date | date_to_long_string }}</span>
+        </small>
+    </h1>
 	<div class="box-body">
 		{{ content }}
 	</div>
